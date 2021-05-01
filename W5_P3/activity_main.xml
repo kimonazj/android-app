@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ListView
+        android:id="@+id/workout_list"
+        android:layout_width="246dp"
+        android:layout_height="317dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:layout_below="@id/workout_list"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:layout_below="@id/workout_list"
+        android:layout_toRightOf="@id/startButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"/>
+
+    <TextView
+        android:id="@+id/stepCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps: "
+        android:layout_below="@id/startButton"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/stepCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@id/startButton"
+        android:layout_toRightOf="@id/stepCountText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp" />
+
+</RelativeLayout>
